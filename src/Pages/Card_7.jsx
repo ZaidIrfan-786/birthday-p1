@@ -40,7 +40,7 @@ const GiftBox = ({ onNext }) => {
       {/* Next Step Button (Shows after opening) */}
       {isOpen && (
         <button className="next-btn fade-in" onClick={onNext}>
-          Continue ✨
+          Thank You!
         </button>
       )}
     </div>

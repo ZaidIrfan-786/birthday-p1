@@ -26,7 +26,7 @@ const Home = () => {
         {step === 3 &&  <GiftCard onComplete={() => setStep(4)} />}        
         {step === 4 &&  <SecretLetter onNext={() => setStep(5)} />}
         {step === 5 &&  <MusicCard audioFile={mySong} onNext={() => setStep(6)} />}
-        {step === 6 &&  <GiftBox onNext={() => setStep(7)} />}
+        {step === 6 &&  <GiftBox />}
       </div>
     </div>
   );
