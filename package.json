@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+   "deploy": "gh-pages -d dist && echo ✅ Live Link: https://ZaidIrfan-786.github.io/birthday-p1",
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
