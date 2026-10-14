@@ -4,8 +4,8 @@ import "./CSS/Card_6.css";
 import photo from "../assets/Rain.webp"; // Replace with your actual cover image path
 
 const MusicCard = ({
-  songTitle = "Our Favorite Song",
-  artist = "Best Friend",
+  songTitle = "Your Favorite Song",
+  artist = "حبك",
   coverImage = photo,
   audioFile,
   onNext,

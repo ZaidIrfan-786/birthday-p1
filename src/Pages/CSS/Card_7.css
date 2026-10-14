@@ -1,86 +1,104 @@
-.gift-box-card {
-  text-align: center;
+
+/* Final birthday experience */
+.ending-tag {
+  color: #d94683;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.final-gift {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.subtitle {
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 1.5rem;
-}
-
-/* Closed Gift */
-.closed-gift {
+  gap: 12px;
+  margin: 20px auto;
+  padding: 22px 35px;
+  color: #c13575;
+  background: #fff0f6;
+  border: 2px solid #f7c2d9;
+  border-radius: 22px;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s ease;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.closed-gift:hover {
-  transform: scale(1.1);
+.final-gift:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(217, 70, 131, 0.15);
 }
 
-.gift-emoji {
-  font-size: 6rem;
-  animation: bounce 1.8s infinite;
+.final-gift .gift-emoji {
+  font-size: 5rem;
 }
 
-.click-hint {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #ff4081;
-  margin-top: 0.5rem;
+.final-note {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
 }
 
-/* Local Sticker Pop-up Display */
-.sticker-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 0;
+.envelope-icon {
+  font-size: 3.5rem;
+  margin-bottom: 8px;
 }
 
-.local-sticker {
-  max-width: 200px;
-  max-height: 200px;
-  object-fit: contain;
-  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.15));
+.letter-paper {
+  margin-top: 20px;
+  padding: 22px;
+  border: 1px solid #f1c8d9;
+  border-radius: 8px 18px 8px 18px;
+  background: linear-gradient(145deg, #fffafc, #fff0f6);
+  box-shadow: 0 8px 24px rgba(150, 60, 100, 0.08);
+  text-align: left;
+  color: #71465c;
+  line-height: 1.8;
 }
 
-/* Pop & Fade Animations */
-.pop-up {
-  animation: popUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+.letter-paper p {
+  margin: 0 0 14px;
 }
 
-@keyframes popUp {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  100% {
-    opacity: 1;
+.letter-paper .letter-signoff {
+  margin-top: 22px;
+  margin-bottom: 0;
+  color: #c13575;
+  font-weight: 700;
+  text-align: right;
+}
+
+.ending-hearts {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+  animation: heartGlow 1.5s ease-in-out infinite alternate;
+}
+
+.ending-footer {
+  margin: 16px 0;
+  color: #9c6683;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+@keyframes heartGlow {
+  from {
     transform: scale(1);
+    opacity: 0.75;
+  }
+  to {
+    transform: scale(1.06);
+    opacity: 1;
   }
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-15px); }
-  60% { transform: translateY(-7px); }
-}
+@media (prefers-reduced-motion: reduce) {
+  .ending-hearts {
+    animation: none;
+  }
 
-.fade-in {
-  animation: fadeIn 0.5s ease forwards;
-  margin-top: 1.5rem;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  .final-gift {
+    transition: none;
+  }
 }

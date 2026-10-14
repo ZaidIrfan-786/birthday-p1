@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CSS/Card_5.css";// Uses your shared styles
 import "./CSS/HomePage.css";// Uses your shared styles
 
-const SecretLetter = ({ name = "Bachhi", onNext }) => {
+const SecretLetter = ({ name = "بنت", onNext }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -25,7 +25,7 @@ const SecretLetter = ({ name = "Bachhi", onNext }) => {
       ) : (
         /* Revealed Letter Content */
         <div className="letter-content fade-in">
-          <h2>Dear {name}, 💌</h2>
+          <h2>{name}, 💌</h2>
           <div className="letter-body">
             <p>
               Thank you for being such an incredible part of my life. Every moment 

@@ -3,11 +3,11 @@ import React from "react";
 const IntroCard = ({ onNext }) => {
   return (
     <div className="card">
-      <h1>Hey beautiful!</h1>
+      <h1>Hey my love!</h1>
       <br />
       <p>
         Today is a special day because someone truly amazing was born.
-        Thank you for being such a wonderful friend and making every moment
+        Thank you for being such a wonderful Wifey and making every moment
         brighter.
       </p>
       <p>
@@ -16,7 +16,7 @@ const IntroCard = ({ onNext }) => {
       </p>
       <button onClick={onNext}>Open Your Surprise</button>
       <div className="signature">
-        — From Someone Who Thinks You're Amazing ❤️
+        — From Your Beloved ❤️
       </div>
     </div>
   );
